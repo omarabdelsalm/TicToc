@@ -19,15 +19,17 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
+            android:background="@color/butWhit"
             android:contentDescription="@string/app_name"
-            android:background="@color/white"/>
+            android:onClick="butClik" />
 
         <Button
             android:id="@+id/bu3"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
@@ -35,7 +37,8 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
     </TableRow>
 
@@ -50,7 +53,8 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
@@ -58,7 +62,8 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
@@ -66,7 +71,8 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
     </TableRow>
 
@@ -81,7 +87,8 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
@@ -89,7 +96,8 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
@@ -97,7 +105,8 @@
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
-            android:background="@color/white"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
     </TableRow>
 </TableLayout>
