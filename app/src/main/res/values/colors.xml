@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="butack">#CFCCCC</color>
     <color name="butWhit">#ffffff</color>
+    <color name="greenTack">#0FEA58</color>
+    <color name="butRed">#E91E63</color>
 </resources>

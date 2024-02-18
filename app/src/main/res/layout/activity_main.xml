@@ -14,7 +14,7 @@
         android:layout_margin="3pt"
         android:gravity="center">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bu1"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -23,8 +23,8 @@
             android:contentDescription="@string/app_name"
             android:onClick="butClik" />
 
-        <Button
-            android:id="@+id/bu3"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bu2"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
@@ -32,8 +32,8 @@
             android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/bu2"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bu3"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
@@ -48,16 +48,7 @@
         android:layout_margin="3pt"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/bu6"
-            android:layout_width="40pt"
-            android:layout_height="40pt"
-            android:layout_marginStart="3pt"
-            android:background="@color/butWhit"
-            android:onClick="butClik"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bu4"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -66,8 +57,17 @@
             android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bu5"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginStart="3pt"
+            android:background="@color/butWhit"
+            android:onClick="butClik"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bu6"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
@@ -82,8 +82,8 @@
         android:layout_margin="3pt"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/bu9"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bu7"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
@@ -91,7 +91,7 @@
             android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/bu8"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -100,8 +100,8 @@
             android:onClick="butClik"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/bu7"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bu9"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"

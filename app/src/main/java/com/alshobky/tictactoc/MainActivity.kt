@@ -2,10 +2,8 @@ package com.alshobky.tictactoc
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
-import com.google.android.material.bottomappbar.BottomAppBar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +24,32 @@ class MainActivity : AppCompatActivity() {
             R.id.bu8->butId=8
             R.id.bu9->butId=9
         }
-        Log.d("select :",buSelected.id.toString())
-        Log.d("select :",butId.toString())
+       // Log.d("select :",buSelected.id.toString())
+       // Log.d("select :",butId.toString())
+        playGame(butId,buSelected)
     }
+    //new mothed to play game
+        private var activePlayer=1
+        private var player1=ArrayList<Int>()
+        private var player2=ArrayList<Int>()
+        fun playGame(butId:Int,buSelected:Button){
+          if(activePlayer==1){
+              buSelected.text="X"
+              buSelected.setBackgroundResource(R.color.butRed)
+              player1.add(butId)
+              activePlayer=2
+          }else{
+              buSelected.text="O"
+              buSelected.setBackgroundResource(R.color.greenTack)
+              player2.add(butId)
+              activePlayer=1
+          }
+           buSelected.isEnabled=false
+        }
+
+
+
+
+
+
 }
