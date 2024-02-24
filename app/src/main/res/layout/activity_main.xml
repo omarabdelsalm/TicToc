@@ -7,55 +7,6 @@
     android:gravity="center"
     android:background="@color/butack"
     tools:context=".MainActivity">
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="3pt"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="player 1"
-            android:textSize="20sp"
-            android:layout_margin="5pt"/>
-
-        <TextView
-            android:id="@+id/txt2"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="player 2"
-            android:layout_margin="5pt"/>
-    </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="3pt"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/txtView1"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="0"
-            android:textColor="@color/butRed"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:layout_margin="5pt"/>
-
-        <TextView
-            android:id="@+id/txtView2"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:text="0"
-            android:textColor="@color/greenTack"
-            android:layout_margin="5pt"/>
-    </TableRow>
-
 
     <TableRow
         android:layout_width="match_parent"
