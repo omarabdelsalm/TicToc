@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import java.util.Random
 
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var bu7:Button
     lateinit var bu8:Button
     lateinit var bu9:Button
+    lateinit var txt1:TextView
+    lateinit var txt2:TextView
+    lateinit var bu:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,6 +34,12 @@ class MainActivity : AppCompatActivity() {
         bu7=findViewById(R.id.bu7)
         bu8=findViewById(R.id.bu8)
         bu9=findViewById(R.id.bu9)
+        bu=findViewById(R.id.btnRest)
+        txt1=findViewById(R.id.txtView1)
+        txt2=findViewById(R.id.txtView2)
+        bu.setOnClickListener {
+            restartGame()
+        }
     }
     fun butClik(view :View){
         val buSelected=view as Button
@@ -116,24 +127,33 @@ class MainActivity : AppCompatActivity() {
             winer=2
         }
         if(winer==1){
+            player1Couunts+=1
             Toast.makeText(this,"the winer is player 1",Toast.LENGTH_LONG).show()
+            restartGame()
+            txt1.text=player1Couunts.toString()
         }else if(winer==2){
+            player2Couunts+=1
             Toast.makeText(this,"the winer is player 2",Toast.LENGTH_LONG).show()
+            restartGame()
+            txt2.text=player2Couunts.toString()
         }
 
     }
 
     // fun for autoplay and select cell
-    fun autoPlay(){
+    fun autoPlay() = try {
         var emptyCells=ArrayList<Int>()
         for(cellId in 1..9){
             if(!(player1.contains(cellId) || player2.contains(cellId))){
                 emptyCells.add(cellId)
             }
         }
+
+
         var r= Random()
         var randIndex=r.nextInt(emptyCells.size)
         val cellId=emptyCells[randIndex]
+
         val buSelected:Button? = when(cellId){
             1->bu1
             2->bu2
@@ -148,6 +168,37 @@ class MainActivity : AppCompatActivity() {
             else -> {bu1}
         }
         playGame(cellId,buSelected!!)
+
+    }catch(e:Exception){
+        restartGame()
+    }
+    // create fun to reset game on
+    // rest count for winer
+    var player1Couunts=0
+    var player2Couunts=0
+    fun restartGame(){
+        activePlayer=1
+        player1.clear()
+        player2.clear()
+        for(cellId in 1..9){
+            val buSelected:Button? = when(cellId){
+                1->bu1
+                2->bu2
+                3->bu3
+                4->bu4
+                5->bu5
+                6->bu6
+                7->bu7
+                8->bu8
+                9->bu9
+
+                else -> {bu1}
+            }
+            buSelected!!.text=""
+            buSelected.setBackgroundResource(R.color.butWhit)
+            buSelected.isEnabled=true
+
+        }
     }
 
 
